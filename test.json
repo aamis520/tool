@@ -1,0 +1,24 @@
+[
+	{
+		name: 'system',
+		name_zh: '系统管理',
+		child:[
+			{
+				name:'systemDept',
+				name_zh: '管理员管理'
+			},
+			{
+				name:'systemDept',
+				name_zh: '部门管理'
+			},
+			{
+				name:'systemDept',
+				name_zh: '角色管理'
+			},
+			{
+				name:'systemDept',
+				name_zh: '菜单管理',
+			}
+		]
+	}
+]

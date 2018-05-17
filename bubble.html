@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	  <script type="text/javascript">
+	  	var arr = [5,6,7,8,9,10,4,3,2,1]
+	  	if(arr.lenth > 1){
+	  	  if(arr[0] < arr[1]){
+	  	    arr = arr.reverse()  // 把数组反转 成后顺前不顺
+	  	  }
+	  	}
+  	  var len = arr.length;
+  	  var tmp = null; // 交换顺序的临时变量
+  	  var index = null; // 后顺前 不顺 的位置
+  	  var exchange = false;
+  	  for (var i=0;i<len-1;i++) {
+  	    
+  	    exchange = false;
+  	    for(var j=0 ;j < len -1 -i;j++){
+  	      
+  	      if(arr[j] > arr[j+1]){
+  	        exchange = true
+  	        tmp = arr[j+1]
+  	        arr[j+1] = arr[j]
+  	        arr[j] =  tmp
+  	      }
+	        if(i==0 && !exchange){
+	          index = j + 1
+          }
+  	    }
+  	    if(!exchange){
+  	      break
+  	    }
+  	    if(i == index){
+  	      // 后面已经顺的数组不用继续再排序了
+  	      break
+  	    }
+  	  }
+  	  console.log("数组排序后：" + arr + "共排序"+ i)
+	  	
+	  	
+	  </script>
+	</body>
+</html>
